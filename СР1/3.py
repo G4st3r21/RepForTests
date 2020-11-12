@@ -27,4 +27,4 @@ with open('which_way.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',',
                         quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for i in end:
-        writer.writerow(*i)
+        writer.writerow(i)
