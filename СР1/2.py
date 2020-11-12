@@ -1,9 +1,10 @@
 import sqlite3
 
 con = sqlite3.connect(input())
+first, second = input(), input()
 cur = con.cursor()
-rez = cur.execute("""SELECT latitude, longitude FROM Island
-                    WHERE height BETWEEN 125 AND 300 """).fetchall()
+rez = cur.execute(f"SELECT latitude, longitude FROM Island
+                    WHERE {first} AND {second}").fetchall()
 
 for elem in rez:
     print(*elem)
