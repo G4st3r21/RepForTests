@@ -12,4 +12,5 @@ with open('suitable_crew.csv', encoding="utf8") as csvfile:
         if (i[2] not in ships) and (good_word not in i[-1].lower()) and (i[0] != 'id'):
             impostors.append(i[1])
 
+impostors.sort()
 print(*impostors, sep='\n')
