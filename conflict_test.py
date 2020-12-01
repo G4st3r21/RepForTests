@@ -1,2 +1,2 @@
-print('Hello Git!')
-print('Hello VSCode!')
+print('HELLO GIT!')
+print('HELLO VSCODE!')
